@@ -1,38 +1,82 @@
+/* ...existing styles... */
+
 .App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.heading1 {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-size: 164px;
+  font-style: bold;
+}
+
+@media (max-width: 480px) {
+  .heading1 {
+    font-size: 96px;
+  }
+}
+
+.heading2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 40px;
+  font-style: bold;
+}
+
+@media (max-width: 480px) {
+  .heading2 {
+    font-size: 36px;
+  }
+}
+
+.paragraph {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-size: 18px;
+}
+
+.section.first {
+  background-color: #000000;
+  padding: 10%;
+  color: white;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section.stat {
+  background-color: white; /* Set the background color for the about section */
+  padding: 10%;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.section.comment {
+  background-color: #000000; /* Set the background color for the projects section */
   color: white;
+  padding: 10%;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  background-color:white;
+  padding: 50px;
+  color:  #636363;
+  text-align: center;
 }
