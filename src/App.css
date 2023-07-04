@@ -28,6 +28,7 @@
   font-family: 'IBM Plex Sans Thai', sans-serif;
   font-size: 164px;
   font-style: bold;
+  text-align: center;
 }
 
 @media (max-width: 480px) {
@@ -48,9 +49,29 @@
   }
 }
 
-.paragraph {
+.paragraph1 {
   font-family: 'IBM Plex Sans Thai', sans-serif;
   font-size: 18px;
+  padding: 18px;
+}
+
+@media (max-width: 480px) {
+  .paragraph1 {
+    font-size: 14px;
+  }
+}
+
+.paragraph2 {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-size: 18px;
+  padding: 18px;
+  text-align: justify;
+}
+
+@media (max-width: 480px) {
+  .paragraph2 {
+    font-size: 14px;
+  }
 }
 
 .section.first {

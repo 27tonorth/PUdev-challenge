@@ -6,7 +6,7 @@ function Comment() {
     <section id="comment" className="section comment">
         <Container fluid>
             <h2 className="heading2">ความเห็นจากนักวิชาการ</h2>
-            <p className="paragraph">Here are some of the projects I've worked on:</p>
+            <p className="paragraph2">Here are some of the projects I've worked on:</p>
             {/* Add project cards or details here */}
         </Container>
     </section>
