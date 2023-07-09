@@ -1,99 +1,139 @@
 .feature-card {
   display: flex;
-  width: 480px;
-  height: 222px;
+  width: 720px;
+  /* height: 222px; */
   flex-direction: column;
   flex-shrink: 0;
   margin: auto;
-  }
+  padding-block-end: 20%;
+}
+
+.feature-card__dialogue {
+  color: var(--white, #FFF);
+  text-align: justify;
+  /* Body 1/Desktop/Regular */
+  font-size: 14px;
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-weight: 400;
+  line-height: 150%;
+  padding-bottom: 5%;
+  text-align: left;
+}
+
+.feature-card__image-container {
+  flex-shrink: 0; /* Prevent image container from shrinking */
+  padding-right: 20px;
+  align-items: left;
+}
+
+.feature-card__image {
+  width:  86px;
+  height:  86px;
+  object-fit: cover;
+  border-radius: 50%;
+  align-items: left;
+}
+
+.feature-card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.feature-card__profile {
+  display: flex;
   
-  .feature-card__dialogue {
-    color: var(--white, #FFF);
-    text-align: justify;
-    /* Body 1/Desktop/Regular */
-    font-size: 14px;
-    font-family: 'IBM Plex Sans Thai', sans-serif;
-    font-style: left;
-    font-weight: 400;
-    line-height: 150%;
+}
+
+.feature-card__name {
+  color: var(--white, #FFF);
+  /* Body 2/Desktop/Bold */
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: left;
+  margin-bottom: 0;
+  padding-top: 7%;
+}
+
+.feature-card__position {
+  color: var(--white, #FFF);
+  /* Body 2/Desktop/Regular */
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: left;
+}
+
+.right-aligned {
+  text-align: end;
+  align-items: end;
+}
+
+.right-aligned .feature-card__dialogue {
+  text-align: end;
+  align-items: end;
+}
+
+
+.right-aligned .feature-card__image-container {
+  align-items: end;
+}
+
+.right-aligned .feature-card__profile-content {
+  text-align: end;
+  align-items: end;
+}
+
+.right-aligned .feature-card__name{
+  text-align: end;
+  align-items: end;
+}
+
+.right-aligned .feature-card__position {
+  text-align: end;
+  align-items: end;
+}
+
+@media (max-width: 480px) {
+  .feature-card {
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: auto;
+    padding-bottom: 30%;
   }
 
   .feature-card__image-container {
-    flex-shrink: 0; /* Prevent image container from shrinking */
-    padding-right: 20px;
-    align-items: left;
-  }
-  .feature-card__image {
-    width:  86px;
-    height:  86px;
-    object-fit: cover;
-    border-radius: 50%;
-    align-items: left;
+    padding-right: 10px; 
+    text-align: center;
+    align-items: center;
   }
 
-  .feature-card__content {
-    flex: 1;
-    display: flex;
-    flex-direction: column; 
-  }
-
-  
   .feature-card__profile {
-    display: flex;
-    padding-bottom: 70%;
+    padding-bottom: 0;
+    text-align: center;
+    align-items: center;
   }
 
-  .feature-card__name {
-    color: var(--white, #FFF);
-    /* Body 2/Desktop/Bold */
-    font-family: 'IBM Plex Sans Thai', sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 150%;
-    text-align: left;
-    margin-bottom: 0;
-    padding-top: 7%;
+  .feature-card__dialogue {
+    padding-bottom: 0;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 2%;
   }
 
+  .feature-card__name,
   .feature-card__position {
-    color: var(--white, #FFF);
-    /* Body 2/Desktop/Regular */
-    font-family: 'IBM Plex Sans Thai', sans-serif;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    text-align: left;
+    font-size: 10px; 
+    text-align: center;
+    align-items: center;
+    
   }
-  
-  @media (max-width: 480px) {
-    .feature-card {
-      text-align: center;
-      display: flex;
-      flex-direction: column;
-      flex-shrink: 0;
-      margin: auto;
-    }
-    
-    .feature-card__image-container {
-      padding-right: 10px; 
-      text-align: center;
-      align-items: center;
-    }
-    
-    .feature-card__profile {
-      padding-bottom: 0;
-      text-align: center;
-      align-items: center;
-    }
-    
-    .feature-card__name,
-    .feature-card__position {
-      font-size: 10px; 
-      text-align: center;
-      align-items: center;
-    }
-  }
-
-  
+}
