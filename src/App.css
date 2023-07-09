@@ -6,7 +6,6 @@
   min-height: 100vh;
 }
 
-
 .container-fluid {
   padding-right: 0;
   padding-left: 0;
@@ -27,7 +26,6 @@
 .heading1 {
   font-family: 'IBM Plex Sans Thai', sans-serif;
   font-size: 164px;
-  font-style: bold;
   text-align: center;
 }
 
@@ -37,41 +35,75 @@
   }
 }
 
-.heading2 {
-  font-family: 'Inter', sans-serif;
+.sub-heading {
+  font-family: 'Noto Sans Thai', sans-serif;
   font-size: 40px;
-  font-style: bold;
+  font-weight: 700;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-bottom: 5%;
+  text-align: justify;
+
 }
 
 @media (max-width: 480px) {
   .heading2 {
-    font-size: 36px;
+    font-size: 32px;
+    padding-left: 0%;
+    padding-right: 0%;
   }
 }
 
 .paragraph1 {
-  font-family: 'IBM Plex Sans Thai', sans-serif;
+  color: var(--white, #FFF);
+  text-align: center;
+  /* Body 1/Desktop/Regular */
   font-size: 18px;
-  padding: 18px;
+  font-family: IBM Plex Sans Thai;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  padding: 20px;
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 @media (max-width: 480px) {
   .paragraph1 {
     font-size: 14px;
+    padding-left: 0%;
+    padding-right: 0%;
   }
 }
 
 .paragraph2 {
   font-family: 'IBM Plex Sans Thai', sans-serif;
   font-size: 18px;
-  padding: 18px;
+  padding: 1rem;
+  padding-left: 20%;
+  padding-right: 20%;
   text-align: justify;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 @media (max-width: 480px) {
   .paragraph2 {
     font-size: 14px;
+    padding-left: 0%;
+    padding-right: 0%;
   }
+}
+
+.linked {
+  font-family: 'IBM Plex Sans Thai', sans-serif;
+  font-size: 14px;
+  padding: 1rem;
+  padding-left: 20%;
+  padding-right: 20%;
+  text-align: center;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .section.first {
@@ -87,11 +119,18 @@
   text-align: center;
 }
 
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .section.comment {
   background-color: #000000; /* Set the background color for the projects section */
   color: white;
   padding: 10%;
   text-align: center;
+  height: 1000px;
 }
 
 

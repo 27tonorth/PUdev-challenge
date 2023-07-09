@@ -1,0 +1,74 @@
+.feature-card {
+    display: flex;
+    width: 480px;
+    height: 222px;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+  }
+  
+  .feature-card__dialogue {
+    color: var(--white, #FFF);
+    text-align: justify;
+    /* Body 1/Desktop/Regular */
+    font-size: 14px;
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-style: left;
+    font-weight: 400;
+    line-height: 150%;
+  }
+
+  .feature-card__image-container {
+    flex: 0 0 auto;
+    margin-right: 10px;
+    width: 86px; /* Set a fixed width for the image container */
+    height: 86px; /* Set a fixed height for the image container */
+    display: flex;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 20%;
+  }
+
+  .feature-card__image {
+    width:  86px;
+    height:  86px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+
+  .feature-card__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .feature-card__name {
+    color: var(--white, #FFF);
+    /* Body 2/Desktop/Bold */
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    text-align: left;
+    margin-bottom: 0;
+    padding-top: 7%;
+  }
+
+  .feature-card__position {
+    color: var(--white, #FFF);
+    /* Body 2/Desktop/Regular */
+    font-family: 'IBM Plex Sans Thai', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    text-align:left;
+  }
+  
+
+
+  
