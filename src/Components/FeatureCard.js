@@ -12,7 +12,7 @@ function FeatureCard({ dialogue, image, name, position}) {
         </div>
         <div className={`feature-card__profile-content ${isRightAligned ? 'text-align-end' : ''}`}>
           <h3 className={`feature-card__name ${isRightAligned ? 'text-align-end' : ''}`}>{name}</h3>
-          <p className="feature-card__position">{position}</p>
+          <p className={`feature-card__position ${isRightAligned ? 'text-align-end' : ''}`}>{position}</p>
         </div>
       </div>
     </div>
