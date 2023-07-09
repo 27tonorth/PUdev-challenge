@@ -71,4 +71,7 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ********************************************************************************************************************************************************
 please install
-npm install axios@1.4.0 bootstrap@5.3.0 react@18.2.0 react-bootstrap@2.8.0 react-dom@18.2.0 react-router-dom@6.14.1 react-scripts@5.0.1 reactstrap@9.2.0 recharts@2.7.2 web-vitals@2.1.4 scrollreveal
+npm install axios@1.4.0 bootstrap@5.3.0 react@18.2.0 react-bootstrap@2.8.0 react-dom@18.2.0 react-router-dom@6.14.1 react-scripts@5.0.1 reactstrap@9.2.0 recharts@2.7.2 web-vitals@2.1.4
+
+run the app by 
+### `npm start`
