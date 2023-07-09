@@ -92,7 +92,7 @@ function Stat() {
             <p className="paragraph2">มาตรา 112 มีการตีความการกระทำอย่างไร้ขอบเขต แต่ทุกคนสามารถผู้กล่าวโทษให้ดำเนินคดีได้ จึงมีการกล่าวหากันเป็นจำนวนมากในช่วงที่มีความขัดแย้งทางการเมืองหลังจากปี 2548 เป็นต้นมา</p>
             
             <div className="chart-container"> 
-              <ResponsiveContainer width={500} height={300}>
+              <ResponsiveContainer width="70%" height={300}>
                 <ComposedChart
                   width={200}
                   height={200}
@@ -105,9 +105,7 @@ function Stat() {
                   }}
                   
                 >
-                  {/* <CartesianGrid stroke="#f5f5f5" /> */}
                   <XAxis
-                    tickCount={2}
                     dataKey="year"
                     scale="band"
                     label={{
@@ -123,7 +121,7 @@ function Stat() {
                     label={{
                       value: 'จำนวนคดี',
                       position: 'top',
-                      offset: 15,
+                      offset: 12,
                       style: { fontSize: 14, fontFamily: 'IBM Plex Sans Thai' },
                     }}
                     tick={{ fontSize: 12, fontFamily: 'IBM Plex Sans Thai' }} 
@@ -131,7 +129,7 @@ function Stat() {
                   <Tooltip  />
                   {/* <Legend /> */}
                   <Bar dataKey="cases" barSize={10} fill="#000000" tick={{ fontSize: 12, fontFamily: 'IBM Plex Sans Thai' }}  />
-                  {/* <Line type="monotone" dataKey="cases" stroke="#222222" /> */}
+                  <Line type="monotone" dataKey="cases" stroke="#222222" />
                 </ComposedChart>
               </ResponsiveContainer>
             </div>
