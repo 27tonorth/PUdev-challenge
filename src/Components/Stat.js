@@ -92,7 +92,7 @@ function Stat() {
             <p className="paragraph2">มาตรา 112 มีการตีความการกระทำอย่างไร้ขอบเขต แต่ทุกคนสามารถผู้กล่าวโทษให้ดำเนินคดีได้ จึงมีการกล่าวหากันเป็นจำนวนมากในช่วงที่มีความขัดแย้งทางการเมืองหลังจากปี 2548 เป็นต้นมา</p>
             
             <div className="chart-container"> 
-              <ResponsiveContainer width="70%" height={300}>
+              <ResponsiveContainer width="68%" height={300}>
                 <ComposedChart
                   width={200}
                   height={200}
